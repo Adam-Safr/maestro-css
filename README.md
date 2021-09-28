@@ -1,7 +1,7 @@
 # Coolize.css - *Free typography library*
 **Author:** *Adam Šáfr*
 ## Demo site
-Link to **[demo](http://www.github.io)** site for preview.
+Link to **[demo](https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr)** site
 ## Dependecies
 ...
 ## Implementation

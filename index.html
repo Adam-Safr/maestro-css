@@ -5,59 +5,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet">
-    <link href="./download/coolize.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="./download/coolize.css" rel="stylesheet">
     <title>Coolize.css</title>
 </head>
 
 <body>
-    <nav>
-        <div class="box">
-            <div class="logo"><a href="#">Coolize<span>.css</span></a></div>
-            <ul class="nav__menu">
-                <li><a href="#about" class="nav__btn">Headings</a></li>
-                <li><a href="#services" class="nav__btn">Text</a></li>
-                <li><a href="#skills" class="nav__btn">Blocks</a></li>
-                <li><a href="#contact" class="nav__btn">Download</a></li>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__title"><a href="#">Coolize<span>.css</span></a></div>
+            <ul class="navbar__menu">
+                <li><a href="#headings" class="navbar__btn">Headings</a></li>
+                <li><a href="#text" class="navbar__btn">Text</a></li>
+                <li><a href="#blocks" class="navbar__btn">Blocks</a></li>
+                <li><a href="https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr/download/coolize.css"
+                        class="navbar__btn">Download</a></li>
             </ul>
-        </div>
-    </nav>
-    
+        </nav>
+    </header>
+
     <main>
         <section class="first">
-            <h1 class="all-caps">Typography library</h1>
-            <div>Welcome to <span class="typing"></span></div>
+            <h1>Welcome to <span class="typing"></span></h1>
         </section>
 
         <section>
-            <p>This demo presents the <b><i>coolize.css</i></b> library. Tady bude zkrácený text jako v Reamde.</p>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam in lorem sit amet leo accumsan lacinia.
+                Nullam eget nisl. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Etiam ligula pede, sagittis quis, interdum ultricies, scelerisque eu. Nunc auctor.
+                Nullam dapibus fermentum ipsum. Vestibulum fermentum tortor id mi. Etiam neque. Integer malesuada. In
+                rutrum. Phasellus faucibus molestie nisl. Neque porro quisquam est, qui dolorem ipsum quia dolor sit
+                amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+                magnam aliquam quaerat voluptatem. Nullam sit amet magna in magna gravida vehicula. Curabitur sagittis
+                hendrerit ante. Integer vulputate sem a nibh rutrum consequat. Nunc tincidunt ante vitae massa.</p>
         </section>
         <section>
-            <p>This demo presents the <b><i>coolize.css</i></b> library. Tady bude zkrácený text jako v Reamde.</p>
+            <h2>Headings <code>&lt;h1&gt; - &lt;h6&gt;</code></h2>
+            <p class="section__info">Search engines use the headings to index the structure and content of your web
+                pages. Users often skim a page by its headings. It is important to use headings to show the document
+                structure.</p>
+            <div class="box">
+                <h1>Heading <span class="heading__info">#h1</span></h1>
+                <div class="pre-wrapper line">
+                <button id="first-button" onclick="copyText('first');" title="Copy Text">Copy</button>
+<pre id="first"><span class="code-tag">h1,</span>
+<span class="code-class">.text-h1</span><span class="code-punctuation"> {</span>
+<span class="code-text"><span class="code-punctuation">font-weight:</span> 500;
+<span class="code-punctuation">font-size:</span> 42px;
+<span class="code-punctuation">margin:</span> 0px 0px 0.7em 0px;</span>
+<span class="code-punctuation">}</span></pre>
+                </div>
+                <h2>Heading <span class="heading__info">#h2</span></h2>
+                <h3>Heading <span class="heading__info">#h3</span></h3>
+                <h4>Heading <span class="heading__info">#h4</span></h4>
+                <h5>Heading <span class="heading__info">#h5</span></h5>
+                <h6>Heading <span class="heading__info">#h6</span></h6>
+            </div>
         </section>
-        <section>
-            <p>This demo presents the <b><i>coolize.css</i></b> library. Tady bude zkrácený text jako v Reamde.</p>
-        </section>
-        <section>
-            <p>This demo presents the <b><i>coolize.css</i></b> library. Tady bude zkrácený text jako v Reamde.</p>
-        </section>
-        <section>
-            <p>This demo presents the <b><i>coolize.css</i></b> library. Tady bude zkrácený text jako v Reamde.</p>
-        </section>
-        <section>
-            <p>This demo presents the <b><i>coolize.css</i></b> library. Tady bude zkrácený text jako v Reamde.</p>
-        </section>
-        <section>
-            <p>This demo presents the <b><i>coolize.css</i></b> library. Tady bude zkrácený text jako v Reamde.</p>
-        </section>
+
     </main>
     <script src="./js/script.js"></script>
+    <script src="./js/copy.js"></script>
 </body>
+
 </html>

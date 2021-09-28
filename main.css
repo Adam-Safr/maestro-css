@@ -4,20 +4,20 @@ body {
 }
 
 span.typing {
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .first {
-    padding-top: 300px;
+    padding: 350px 80px 0 80px;
 }
 
-.box {
+.navbar {
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
 }
 
-nav {
+header {
     position: fixed;
     top: 0;
     width: 100%;
@@ -26,45 +26,45 @@ nav {
     transition: all 0.3s ease;
 }
 
-nav.sticky {
+header.sticky {
     padding: 12px 0;
     background: #006B38FF;
 }
 
-nav .box {
+header .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-nav .logo a {
+header .navbar__title a {
     color: #fff;
     font-size: 35px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
-nav .logo a span {
+header .navbar__title a span {
     color: #006B38FF;
     transition: all 0.3s ease;
 }
 
-nav.sticky .logo a span {
+header.sticky .navbar__title a span {
     color: #fff;
     transition: all 0.3s ease;
 }
 
-nav.sticky .logo a {
+header.sticky .navbar__title a {
     color: #060606;
     transition: all 0.3s ease;
 }
 
-nav .nav__menu li {
+header .navbar__menu li {
     list-style: none;
     display: inline-block;
 }
 
-nav .nav__menu li a {
+header .navbar__menu li a {
     display: block;
     color: #fff;
     font-size: 18px;
@@ -73,17 +73,87 @@ nav .nav__menu li a {
     transition: color 0.3s ease;
 }
 
-nav .nav__menu li a:hover {
+header .navbar__menu li a:hover {
     color: #006B38FF;
 }
 
-nav.sticky .nav__menu li a:hover {
+header.sticky .navbar__menu li a:hover {
     color: #060606;
 }
 
-.nav__btn {
+.navbar__btn {
     color: #fff;
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+
+p.section__info {
+    margin-bottom: 1.5em;
+}
+
+span.heading__info {
+    color: #999;
+    margin-left: 0.5em;
+}
+
+pre {
+    width: 100%;
+}
+
+.pre-wrapper {
+    position: relative;
+    background-color: #191919;
+    padding-left: 30px;
+}
+
+.code-tag {
+    color: #33ccff;
+}
+
+.code-class {
+    color: rgb(235, 171, 53);
+}
+
+.code-text {
+    color: rgb(204, 204, 204);
+}
+
+.code-punctuation {
+    color: grey;
+}
+
+button {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    height: 36px;
+    line-height: 34px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #006B38FF;
+    transition: background-color 0.2s ease-in-out 0s, opacity 0.2s ease-in-out 0s;
+    padding: 0 18px;
+    position: absolute;
+    right: -2.2em;
+}
+
+button:hover {
+    color: #ffffff;
+}
+
+.line:after {
+    content:"";
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    border-left: 2px solid #006B38FF;
+    transform: translate(-50%);
+    margin: 8px 0;
+    border-radius: 20%;
 }
