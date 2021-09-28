@@ -42,15 +42,14 @@
                 magnam aliquam quaerat voluptatem. Nullam sit amet magna in magna gravida vehicula. Curabitur sagittis
                 hendrerit ante. Integer vulputate sem a nibh rutrum consequat. Nunc tincidunt ante vitae massa.</p>
         </section>
-        <section>
+        <section id="headings">
             <h2>Headings <code>&lt;h1&gt; - &lt;h6&gt;</code></h2>
             <p class="section__info">Search engines use the headings to index the structure and content of your web
                 pages. Users often skim a page by its headings. It is important to use headings to show the document
-                structure.</p>
-            <div class="box">
-                <h1>Heading <span class="heading__info">#h1</span></h1>
+                structure. In the code sample below you can see how to implement heading in your code.</p>
+<div class="code-block">    
                 <div class="pre-wrapper line">
-                <button id="first-button" onclick="copyText('first');" title="Copy Text">Copy</button>
+                        <button id="first-button" onclick="copyText('first');" title="Copy Text">Copy</button>
 <pre id="first"><span class="code-tag">h1,</span>
 <span class="code-class">.text-h1</span><span class="code-punctuation"> {</span>
 <span class="code-text"><span class="code-punctuation">font-weight:</span> 500;
@@ -58,12 +57,25 @@
 <span class="code-punctuation">margin:</span> 0px 0px 0.7em 0px;</span>
 <span class="code-punctuation">}</span></pre>
                 </div>
+                <div class="pre-wrapper line">
+                <button id="first-button" onclick="copyText('second');" title="Copy Text">Copy</button>
+<pre id="second"><span class="code-tag">&lt;h1&gt;</span> Heading <span class="code-tag">&lt;/h1&gt;</span></div>
+                <div class="pre-wrapper line">            
+                <button id="first-button" onclick="copyText('third');" title="Copy Text">Copy</button>
+<pre id="third"><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span></div>
+</div>
+<div class="box">
+                <h1>Heading <span class="heading__info">#h1</span></h1>
                 <h2>Heading <span class="heading__info">#h2</span></h2>
                 <h3>Heading <span class="heading__info">#h3</span></h3>
                 <h4>Heading <span class="heading__info">#h4</span></h4>
                 <h5>Heading <span class="heading__info">#h5</span></h5>
                 <h6>Heading <span class="heading__info">#h6</span></h6>
             </div>
+        </section>
+
+        <section>
+            <h2>Text elements &#38; text classes <code>&lt;p&gt; &lt;a&gt; &lt;b&gt; &lt;i&gt; &lt;small&gt; &lt;em&gt;</code></h2>
         </section>
 
     </main>

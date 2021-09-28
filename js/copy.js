@@ -7,8 +7,5 @@ function copyText(element) {
     setTimeout(function(){
       button.innerText = originalText;
       }, 750);
-  }, function() {
-    button.style.cssText = "background-color: var(--red);";
-    button.innerText = 'Error';
   });
 }
