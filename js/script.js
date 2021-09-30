@@ -14,7 +14,7 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Coolize.css", "Free Library"],
+        strings: ["Maestro.css", "Free Library"],
         typeSpeed: 100,
         backSpeed: 70,
         loop: true
