@@ -1,6 +1,54 @@
+:root {
+    --dark-grey: #eeebeb;
+    --black: #dbdada;
+    --font-color: rgb(5, 5, 5);
+    --green: #006B38FF;
+    --white: #fff;
+}
+
+[data-theme="dark"] {
+    --dark-grey: #191919;
+    --black: #060606;
+    --green: #006B38FF;
+    --font-color: #ffff;
+    --white: #fff;
+}
+
 body {
-    color: #ffff;
-    background-color: #060606;
+    color: var(--font-color);
+    background-color: var(--black);
+}
+
+section>h2::before {
+    content: "#";
+    margin-right: 6px;
+    color: #999;
+    transition: 0.6s;
+}
+
+section .box h1 .heading__info,
+section .box h2 .heading__info,
+section .box h3 .heading__info,
+section .box h4 .heading__info,
+section .box h5 .heading__info,
+section .box h6 .heading__info {
+    transition: 0.6s;
+}
+
+section>h2:hover::before,
+section .box h1:hover .heading__info,
+section .box h2:hover .heading__info,
+section .box h3:hover .heading__info,
+section .box h4:hover .heading__info,
+section .box h5:hover .heading__info,
+section .box h6:hover .heading__info {
+    color: rgb(71, 71, 71);
+    transition: 0.4s;
+}
+
+.row {
+    display: flex;
+    gap: 80px;
 }
 
 span.typing {
@@ -39,19 +87,19 @@ header .navbar {
 }
 
 header .navbar__title a {
-    color: #fff;
+    color: var(--font-color);
     font-size: 35px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 header .navbar__title a span {
-    color: #006B38FF;
+    color: var(--green);
     transition: all 0.3s ease;
 }
 
 header.sticky .navbar__title a span {
-    color: #fff;
+    color: var(--white);
     transition: all 0.3s ease;
 }
 
@@ -67,7 +115,7 @@ header .navbar__menu li {
 
 header .navbar__menu li a {
     display: block;
-    color: #fff;
+    color: var(--font-color);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
@@ -96,4 +144,63 @@ p.section__info {
 span.heading__info {
     color: #999;
     margin-left: 0.5em;
+}
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch-wrapper em {
+    margin-left: 10px;
+    font-size: 1rem;
+}
+
+.theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: relative;
+    width: 60px;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.slider {
+    background-color: #ccc;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+}
+
+.slider:before {
+    background-color: #fff;
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+}
+
+input:checked+.slider {
+    background-color: var(--green);
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
