@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
+:root {
+    --dark-grey: #eeebeb;
+    --black: #dbdada;
+    --bg-color: #ffffff;
+    --font-color: rgb(5, 5, 5);
+    --green: #006b38;
+    --code-yellow: rgb(228, 175, 78);
+    --code-lightgrey: rgb(126, 125, 125);
+    --code-grey: rgb(68, 68, 68);
+    --code-white: #fff;
+    --code-blue: #0c3269;
+}
+
+[data-theme="dark"] {
+    --dark-grey: #191919;
+    --black: #060606;
+    --bg-color: #060606;
+    --green: #006B38FF;
+    --font-color: #ffff;
+    --white: #fff;
+    --code-yellow: rgb(235, 171, 53);
+    --code-lightgrey: rgb(204, 204, 204);
+    --code-grey: rgb(126, 125, 125);
+    --code-white: #fff;
+    --code-blue: #33ccff;
+}
+
 html {
     line-height: 1.15;
 }
@@ -128,7 +155,7 @@ s {
 }
 
 mark {
-    background-color: rgb(224, 224, 43);
+    background-color: var(--code-yellow);
 }
 
 em,
@@ -146,14 +173,12 @@ q {
     display: inline;
 }
 
-q::before,
 blockquote p::before {
-    content: '\201E';
+    content: open-quote;
 }
 
-q::after,
 blockquote p::after {
-    content: '\201C';
+    content: close-quote;
 }
 
 blockquote {
@@ -167,6 +192,7 @@ blockquote p {
     padding: 15px;
     background: var(--dark-grey);
     border-radius: 5px;
+    align-self: center;
 }
 
 figure {
@@ -179,6 +205,7 @@ figcaption {
 
 blockquote .author {
     font-style: italic;
+    font-weight: 500;
 }
 
 blockquote .author::before,
@@ -186,6 +213,7 @@ blockquote .author::after {
     content: '\2014';
     margin-right: .5em;
     display: inline;
+    font-weight: normal;
 }
 
 blockquote .author::after {
@@ -203,6 +231,10 @@ section {
     padding: 2em 80px;
     max-width: 1300px;
     margin: 0 auto;
+}
+
+div {
+    display: block;
 }
 
 /* Coding */
@@ -232,19 +264,19 @@ code {
 }
 
 .code-tag {
-    color: #33ccff;
+    color: var(--code-blue);
 }
 
 .code-class {
-    color: rgb(235, 171, 53);
+    color: var(--code-yellow);
 }
 
 .code-text {
-    color: rgb(204, 204, 204);
+    color: var(--code-lightgrey);
 }
 
 .code-punctuation {
-    color: grey;
+    color: var(--code-grey);
 }
 
 button,

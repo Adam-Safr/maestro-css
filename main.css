@@ -1,21 +1,3 @@
-:root {
-    --dark-grey: #eeebeb;
-    --black: #dbdada;
-    --bg-color: #ffffff;
-    --font-color: rgb(5, 5, 5);
-    --green: #006B38FF;
-    --white: #fff;
-}
-
-[data-theme="dark"] {
-    --dark-grey: #191919;
-    --black: #060606;
-    --bg-color: #060606;
-    --green: #006B38FF;
-    --font-color: #ffff;
-    --white: #fff;
-}
-
 body {
     color: var(--font-color);
     background-color: var(--bg-color);
