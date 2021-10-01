@@ -8,10 +8,6 @@ $(document).ready(function(){
         }
     });
 
-    $('header .navbar__menu li a').click(function(){
-        $('html').css("scrollBehavior", "smooth");
-    });
-
     // typing text animation script
     var typed = new Typed(".typing", {
         strings: ["Maestro.css", "Free Typography Library"],

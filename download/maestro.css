@@ -72,13 +72,11 @@ h6,
     h2,
     .text-h2 {
         font-size: 31px;
-        margin: 0px;
     }
 
     h3,
     .text-h3 {
         font-size: 26px;
-        margin: 0px;
     }
 
     h4,
@@ -102,10 +100,45 @@ h6,
     text-transform: uppercase;
 }
 
-p {
+b {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+    font-weight: 500;
+}
+
+a:hover {
+    color: #000000;
+    transition: 0.4s;
+}
+
+p,
+.text-paragraph {
     font-size: 16px;
     line-height: 1.5;
+    color: var(--font-color);
 }
+
+s {
+    text-decoration: line-through;
+}
+
+mark {
+    color: var(--font-color);
+    background-color: rgb(224, 224, 43);
+}
+
+em, i {
+    font-style: italic;
+}
+
+small {
+    font-size: 0.85rem;
+}
+
 
 /* Blocks */
 main {

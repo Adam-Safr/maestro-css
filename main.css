@@ -1,6 +1,7 @@
 :root {
     --dark-grey: #eeebeb;
     --black: #dbdada;
+    --bg-color: #ffffff;
     --font-color: rgb(5, 5, 5);
     --green: #006B38FF;
     --white: #fff;
@@ -9,6 +10,7 @@
 [data-theme="dark"] {
     --dark-grey: #191919;
     --black: #060606;
+    --bg-color: #060606;
     --green: #006B38FF;
     --font-color: #ffff;
     --white: #fff;
@@ -16,7 +18,7 @@
 
 body {
     color: var(--font-color);
-    background-color: var(--black);
+    background-color: var(--bg-color);
 }
 
 section>h2::before {
@@ -58,6 +60,7 @@ span.typing {
 
 .first {
     padding: 300px 80px 100px 80px;
+    position: relative;
 }
 
 .navbar {
@@ -149,9 +152,12 @@ span.heading__info {
 .theme-switch-wrapper {
     display: flex;
     align-items: center;
+    position: absolute;
+    top: 100px;
+    right: 80px;
 }
 
-.theme-switch-wrapper em {
+.theme-switch-wrapper span {
     margin-left: 10px;
     font-size: 1rem;
 }
