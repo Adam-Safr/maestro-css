@@ -79,7 +79,7 @@ header .navbar__title a {
 }
 
 header .navbar__title a span {
-    color: var(--green);
+    color: var(--theme-color);
     transition: all 0.3s ease;
 }
 
@@ -178,7 +178,7 @@ span.heading__info {
 }
 
 input:checked+.slider {
-    background-color: var(--green);
+    background-color: var(--theme-color);
 }
 
 input:checked+.slider:before {
@@ -191,4 +191,8 @@ input:checked+.slider:before {
 
 .slider.round:before {
     border-radius: 50%;
+}
+
+.gallery__block img:first-child {
+    object-position: right;
 }
