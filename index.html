@@ -72,7 +72,8 @@
             <h2>Types of text <code>&lt;p&gt; &lt;a&gt; &lt;b&gt; &lt;i&gt; &lt;small&gt; &lt;s&gt;</code></h2>
             <div class="box">
 
-                <p>Normal paragraph looks like this. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti sociosqu ad litora
+                <p>Normal paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Class aptent taciti
+                    sociosqu ad litora
                     torquent per conubia nostra, per inceptos hymenaeos. Sed ac dolor sit amet purus malesuada congue.
                 </p>
                 <p>This text is <u>underlined</u> and this text is <b>bold</b>. This text is <s>striked</s> and this
@@ -87,12 +88,16 @@
             <div class="box">
                 <h3>Q tag</h3>
                 <p>Hasbulla once said: <q>What did you just say about my head? Chicken!</q></p>
-                <p><q>Two things are infinite: the universe and human stupidity - and I'm not sure about the universe.</q> Albert Einstein</p>
+                <p><q>Two things are infinite: the universe and human stupidity - and I'm not sure about the
+                        universe.</q> Albert Einstein</p>
                 <h3>Blockquote</h3>
                 <figure>
                     <blockquote>
-                        <p>Your website is the center of your digital eco-system, like a brick and mortar location, the experience matters once a customer enters, just as much as the perception they have of you before they walk through the door.</p>
-                        <figcaption><span class="author">Leland Dieno</span> Face The Book With Your Small Business</figcaption>
+                        <p>Your website is the center of your digital eco-system, like a brick and mortar location, the
+                            experience matters once a customer enters, just as much as the perception they have of you
+                            before they walk through the door.</p>
+                        <figcaption><span class="author">Leland Dieno</span> Face The Book With Your Small Business
+                        </figcaption>
                     </blockquote>
                 </figure>
                 <figure>
@@ -102,6 +107,66 @@
                         </figcaption>
                     </blockquote>
                 </figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Lists</h2>
+            <div class="box-half">
+                <div class="box">
+                    <h3>Unordered list</h3>
+                    <p>The <code>&lt;ul&gt;</code> tag defines an unordered list. Use the <code>&lt;ul&gt;</code> tag
+                        together with the <code>&lt;li&gt;</code> tag to create unordered lists.</p>
+                    <ul>
+                        <li>Monday</li>
+                        <li>Tuesday
+                            <ul>
+                                <li>Morning</li>
+                                <li>Evening</li>
+                            </ul>
+                        </li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>It's Friday
+                            <ul>
+                                <li>Theeeeeeen</li>
+                            </ul>
+                        </li>
+                        <li>Saturday</li>
+                        <li>Sunday
+                            <ul>
+                                <li>Whaaaaaat</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Ordered list</h3>
+                    <p>The <code>&lt;ol&gt;</code> tag defines an ordered list. An ordered list can be numerical or
+                        alphabetical. The <code>&lt;li&gt;</code> tag is used to define each list item.</p>
+                    <ol>
+                        <li>Monday</li>
+                        <li>Tuesday
+                            <ol>
+                                <li>Morning</li>
+                                <li>Evening</li>
+                            </ol>
+                        </li>
+                        <li>Wednesday</li>
+                        <li>Thursday</li>
+                        <li>It's Friday
+                            <ol>
+                                <li>Theeeeeeen</li>
+                            </ol>
+                        </li>
+                        <li>Saturday</li>
+                        <li>Sunday
+                            <ol>
+                                <li>Whaaaaaat</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </section>
 
@@ -122,10 +187,12 @@
                 </div>
             </div>
         </section>
-    
+
         <section>
             <h2>Pictures</h2>
-            <p>The &lt;img&gt; tag is used to embed an image in an HTML page. Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.</p>
+            <p>The &lt;img&gt; tag is used to embed an image in an HTML page. Images are not technically inserted into a
+                web page; images are linked to web pages. The <img> tag creates a holding space for the referenced
+                image.</p>
             <h3>Single Image</h3>
             <figure class="gallery__block">
                 <a href="./img/goat.jpg">
@@ -135,24 +202,24 @@
             </figure>
             <h3>Gallery with hover effect</h3>
             <div class="gallery">
-                    <figure class="gallery__block">
-                        <a href="./img/hasbi1.jpeg">
-                            <img src="./img/hasbi1.jpeg" alt="Hasbulla with sunset">
-                            <figcaption class="gallery__caption">Photo: Hasbulla Selfie</figcaption>
-                        </a>
-                    </figure>
-                    <figure class="gallery__block">
-                        <a href="./img/hasbi2.jpg">
-                            <img src="./img/hasbi2.jpg" alt="Hasbulla model portrait">
-                            <figcaption class="gallery__caption">Hasbi with his car</figcaption>
-                        </a>
-                    </figure>
-                    <figure class="gallery__block">
-                        <a href="./img/hasbi4.jpg">
-                            <img src="./img/hasbi4.jpg" alt="Hasbulla fight Abdu rozik mma box">
-                            <figcaption class="gallery__caption">King Hasbulla fight AbduRozik</figcaption>
-                        </a>
-                    </figure>
+                <figure class="gallery__block">
+                    <a href="./img/hasbi1.jpeg">
+                        <img src="./img/hasbi1.jpeg" alt="Hasbulla with sunset">
+                        <figcaption class="gallery__caption">Photo: Hasbulla Selfie</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__block">
+                    <a href="./img/hasbi2.jpg">
+                        <img src="./img/hasbi2.jpg" alt="Hasbulla model portrait">
+                        <figcaption class="gallery__caption">Hasbi with his car</figcaption>
+                    </a>
+                </figure>
+                <figure class="gallery__block">
+                    <a href="./img/hasbi4.jpg">
+                        <img src="./img/hasbi4.jpg" alt="Hasbulla fight Abdu rozik mma box">
+                        <figcaption class="gallery__caption">King Hasbulla fight AbduRozik</figcaption>
+                    </a>
+                </figure>
             </div>
         </section>
 
@@ -170,12 +237,9 @@
 <span class="code-punctuation">}</span></pre>
                 </div>
                 <div class="pre-wrapper line">
-                    <button class="btn-primary" id="first-button" onclick="copyText('second');" title="Copy Text">Copy
+                    <button class="btn-primary" id="first-button" onclick="copyText('third');" title="Copy Text">Copy
                         HTML</button>
-                    <pre id="second"><span class="code-tag">&lt;h1&gt;</span> Heading <span class="code-tag">&lt;/h1&gt;</span></div>
-                <div class="pre-wrapper line">            
-                <button class="btn-primary" id="first-button" onclick="copyText('third');" title="Copy Text">Copy HTML</button>
-<pre id="third"><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span>
+                    <pre id="third"><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span>
 </pre>
                 </div>
             </div>

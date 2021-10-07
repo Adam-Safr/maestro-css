@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
 :root {
     --dark-grey: #eeebeb;
     --black: #dbdada;
@@ -181,7 +182,7 @@ blockquote p::after {
 
 blockquote {
     margin: 0;
-    border-left: 0.3rem solid #d1d1d1; 
+    border-left: 0.3rem solid #d1d1d1;
     padding: 0 0 0 1em;
     font-style: italic;
 }
@@ -219,6 +220,43 @@ blockquote .author::after {
     margin-left: .5em;
 }
 
+/* Lists */
+ul {
+    margin: 1em 0;
+    padding-left: 0em;
+    list-style: circle inside;
+}
+
+ul ul,
+ol ol {
+    margin: 0.5em 0 0.5em 2.5em;
+    padding: 5px;
+}
+
+ul li {
+    margin-bottom: 1em;
+    display: list-item;
+}
+
+ol li {
+    margin-bottom: 1em;
+    display: block;
+}
+
+ol {
+    counter-reset: item;
+}
+
+ol li {
+    position: relative;
+}
+
+ol li:before {
+    content: counters(item, ".")".";
+    counter-increment: item;
+    margin-right: 5px;
+}
+
 /* Blocks */
 main {
     display: block;
@@ -226,9 +264,21 @@ main {
 
 section {
     display: block;
-    padding: 2em 80px;
-    max-width: 1300px;
+    padding: 2em 40px;
     margin: 0 auto;
+}
+
+@media (min-width: 470px) {
+    section {
+        padding: 2em 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    section {
+        padding: 2em 80px;
+        max-width: 1300px;
+    }
 }
 
 /* Coding */
@@ -236,8 +286,8 @@ section {
 pre,
 code {
     font-family: 'Roboto Mono', monospace;
-    font-size: 15px;
-    padding: 8px 15px;
+    font-size: 13px;
+    padding: 8px 10px;
     background-color: var(--dark-grey);
     margin-bottom: 1em;
     line-height: 1.3;
@@ -273,6 +323,15 @@ code {
     color: var(--code-grey);
 }
 
+@media (min-width: 768px) {
+
+    pre,
+    code {
+        font-size: 15px;
+        padding: 8px 13px;
+    }
+}
+
 /* Alerts */
 .message {
     padding: 15px;
@@ -299,7 +358,7 @@ code {
 .message--basic {
     background-color: var(--alert-basic);
 }
-  
+
 .btn-close {
     margin-left: 0px;
     color: white;
@@ -309,7 +368,7 @@ code {
     cursor: pointer;
     transition: 0.5s;
 }
-  
+
 .btn-close:hover {
     color: black;
     transition: 0.5s;
@@ -365,6 +424,7 @@ button.btn-primary,
 
 .code-block {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     margin: 20px 0 40px 0;
 }
@@ -374,11 +434,11 @@ button.btn-primary,
     display: flex;
     padding: 2px;
     transition: 0.3s;
+    flex-wrap: wrap;
 }
 
 .gallery__block {
     overflow: hidden;
-    flex: 1;
     width: fit-content;
 }
 
@@ -392,8 +452,7 @@ button.btn-primary,
     display: block;
     transition: 0.3s;
     position: relative;
-    height: 100%;
-    max-width: 40vw;
+    max-height: 70vh;
 }
 
 .gallery__block img {
@@ -417,10 +476,20 @@ figure .gallery__caption {
     left: 0;
     padding: 0.8em;
     width: 100%;
-    max-width: 40vw;
     font-size: 13px;
     color: #fff;
     opacity: 0;
     transition: 0.3s;
 }
 
+@media (min-width: 768px) {
+    .gallery__block a {
+        max-width: 50vw;
+        height: 100%;
+    }
+
+    .gallery__block {
+        flex: 1;
+    }
+
+}
