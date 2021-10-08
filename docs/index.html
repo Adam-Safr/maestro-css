@@ -8,8 +8,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="./download/maestro.css" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+    <link href="../maestro.css" rel="stylesheet">
+    <link href="./main.css" rel="stylesheet">
     <title>Maestro.css</title>
 </head>
 
@@ -20,8 +20,12 @@
             <ul class="navbar__menu">
                 <li><a href="#headings" class="navbar__btn">Headings</a></li>
                 <li><a href="#text" class="navbar__btn">Text</a></li>
-                <li><a href="#blocks" class="navbar__btn">Blocks</a></li>
-                <li><a href="#download" class="navbar__btn">Download</a></li>
+                <li><a href="#list" class="navbar__btn">Lists</a></li>
+                <li><a href="#table" class="navbar__btn">Table</a></li>
+                <li><a href="#alerts" class="navbar__btn">Alerts</a></li>
+                <li><a href="#buttons" class="navbar__btn">Buttons</a></li>
+                <li><a href="#buttons" class="navbar__btn">Gallery</a></li>
+                <li><a href="#code" class="navbar__btn">Code</a></li>
             </ul>
         </nav>
     </header>
@@ -48,7 +52,7 @@
                 magnam aliquam quaerat voluptatem. Nullam sit amet magna in magna gravida vehicula. Curabitur sagittis
                 hendrerit ante. Integer vulputate sem a nibh rutrum consequat. Nunc tincidunt ante vitae massa.</p>
             <a class="button btn-primary"
-                href="https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr/download/maestro.css">Download
+                href="https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr/maestro.css">Download
                 full CSS</a>
         </section>
         <section id="headings">
@@ -68,7 +72,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="text">
             <h2>Types of text <code>&lt;p&gt; &lt;a&gt; &lt;b&gt; &lt;i&gt; &lt;small&gt; &lt;s&gt;</code></h2>
             <div class="box">
 
@@ -83,7 +87,7 @@
             </div>
         </section>
 
-        <section>
+    <section id="quotes">
             <h2>Quotes</h2>
             <div class="box">
                 <h3>Q tag</h3>
@@ -110,7 +114,7 @@
             </div>
         </section>
 
-        <section>
+        <section id="list">
             <h2>Lists</h2>
             <div class="box-half">
                 <div class="box">
@@ -170,7 +174,41 @@
             </div>
         </section>
 
-        <section>
+        <section id="table">
+            <h2>Table</h2>
+            <p>A table in HTML consists of table cells inside rows and columns.Each table cell is defined by a <code>&lt;td&gt;</code> and a <code>&lt;/td&gt;</code> tag.Everything between <code>&lt;td&gt;</code> and <code>&lt;/td&gt;</code> are the content of the table cell.</p>
+            <table>
+                <tbody>
+                <tr>
+                    <th>Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <th>Ivo</th>
+                    <th>Male</th>
+                    <th>39</th>
+                </tr>
+                <tr>
+                    <th>George</th>
+                    <th>Male</th>
+                    <th>17</th>
+                </tr>
+                <tr>
+                    <th>Jane</th>
+                    <th>Female</th>
+                    <th>6</th>
+                </tr>
+                <tr>
+                    <th>John</th>
+                    <th>Male</th>
+                    <th>56</th>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="alerts">
             <h2>Alerts</h2>
             <div class="box">
                 <div class="message message--warning">
@@ -188,7 +226,18 @@
             </div>
         </section>
 
-        <section>
+        <section id="buttons">
+            <h2>Buttons</h2>
+            <p>The <code>&lt;button&gt;</code> tag defines a clickable button.</p>
+            <div class="box">
+                <button class="btn-primary">Button</button>
+                <button disabled>Tlačítko</button>
+                <button class="disabled">Tlačítko</button>
+                <input class="button btn-primary" type="submit" value="Button">
+            </div>
+        </section>
+
+        <section id="gallery">
             <h2>Pictures</h2>
             <p>The &lt;img&gt; tag is used to embed an image in an HTML page. Images are not technically inserted into a
                 web page; images are linked to web pages. The <img> tag creates a holding space for the referenced
@@ -223,8 +272,9 @@
             </div>
         </section>
 
-        <section>
+        <section id="code">
             <h2>Pre and code blocks</h2>
+            <p>The <code>&lt;pre&gt;</code> tag is used for indicating preformatted text. The <code>&lt;code&gt;</code> tag surrounds the code being marked up.</p>
             <div class="code-block">
                 <div class="pre-wrapper line">
                     <button class="btn-primary" id="first-button" onclick="copyText('first');" title="Copy Text">Copy

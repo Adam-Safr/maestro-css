@@ -113,23 +113,29 @@ header.sticky .navbar__title a {
 header .navbar__menu li {
     list-style: none;
     display: inline-block;
+    margin: 0;
+    color: var(--white);
 }
 
 header .navbar__menu li a {
     display: block;
-    color: var(--font-color);
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
     transition: color 0.3s ease;
+    color: var(--font-color);
 }
 
 header .navbar__menu li a:hover {
     color: #006B38FF;
 }
 
+header.sticky .navbar__menu li a {
+    color: var(--white);
+}
+
 header.sticky .navbar__menu li a:hover {
-    color: #060606;
+    color: var(--font-color);
 }
 
 .navbar__btn {
