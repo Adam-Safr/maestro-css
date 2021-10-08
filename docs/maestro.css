@@ -297,7 +297,7 @@ table th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color:  var(--dark-grey);
+    background-color: var(--dark-grey);
     color: var(--font-color);
     font-weight: normal;
 }
@@ -330,7 +330,7 @@ code {
     padding-left: 30px;
     min-width: 30%;
     height: 100%;
-    margin-top: 45px;
+    margin-top: 10px;
 }
 
 .code-tag {
@@ -350,7 +350,6 @@ code {
 }
 
 @media (min-width: 768px) {
-
     pre,
     code {
         font-size: 15px;
@@ -450,13 +449,7 @@ button[disabled]:hover,
 button.disabled,
 .button.disabled {
     background-color: #859dc0;
-    transition: 0.2s;   
-}
-
-.pre-wrapper button {
-    position: absolute;
-    right: 0;
-    top: -36px;
+    transition: 0.2s;
 }
 
 /* Pictures */
