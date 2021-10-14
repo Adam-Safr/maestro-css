@@ -14,15 +14,19 @@ section>h2::before {
     display: block;
 }
 
-.box-half {
+.box--half {
     display: flex;
     flex-direction: column;
     gap: 25px;
     justify-content: space-between;
 }
 
-@media (min-width: 1400px) {
-    .box-half {
+.box--small {
+    max-width: 20% !important;
+}
+
+@media (min-width: 768px) {
+    .box--half {
         flex-direction: row;
     }
 }
@@ -218,4 +222,102 @@ input:checked+.slider:before {
 
 .gallery__block img:first-child {
     object-position: right;
+}
+
+footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    overflow: hidden;
+    background-color: black;
+    padding: 2em 40px;
+    margin-top: 80px;
+    font-size: 15px;
+}
+
+footer > div {
+    margin: 2em 0;
+}
+
+footer h2 {
+    color: var(--white);
+    position: relative;
+    display: inline;
+}
+
+footer h2 span {
+    color: var(--theme-color);
+}
+
+footer h2 .copy {
+    font-size: 16px;
+    color: var(--white);
+    position: absolute;
+    top: 0;
+    right: -20px;
+}
+
+.footer__name a,
+.footer__email a {
+    color: var(--code-grey);
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.footer__name a:hover,
+.footer__email a:hover {
+    color: var(--font-color);
+    transition: 0.3s;
+}
+
+.footer__project{
+    color: var(--code-grey);
+    font-size: 14px;
+}
+
+footer .name span {
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.footer__icons {
+    display: flex;
+    gap: 25px;
+}
+
+.footer__icons a {
+    display: block;
+    width: 80px;
+    height: 80px;
+}
+
+.footer__icons img {
+    height: 80px;
+}
+
+.footer__icons img.pslib--logo {
+    width: 210px;
+    margin-left: 3em;
+}
+
+@media (min-width: 470px) {
+    footer {
+        padding: 4em 60px;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding: 4em 80px;
+        max-width: 1300px;
+        flex-direction: row;
+    }
+    footer > div {
+        margin: 0;
+        max-width: 40%;
+    }
 }

@@ -116,61 +116,66 @@
 
         <section id="list">
             <h2>Lists</h2>
-            <div class="box-half">
-                <div class="box">
-                    <h3>Unordered list</h3>
-                    <p>The <code>&lt;ul&gt;</code> tag defines an unordered list. Use the <code>&lt;ul&gt;</code> tag
-                        together with the <code>&lt;li&gt;</code> tag to create unordered lists.</p>
-                    <ul>
-                        <li>Monday</li>
-                        <li>Tuesday
-                            <ul>
-                                <li>Morning</li>
-                                <li>Evening</li>
-                            </ul>
-                        </li>
-                        <li>Wednesday</li>
-                        <li>Thursday</li>
-                        <li>It's Friday
-                            <ul>
-                                <li>Theeeeeeen</li>
-                            </ul>
-                        </li>
-                        <li>Saturday</li>
-                        <li>Sunday
-                            <ul>
-                                <li>Whaaaaaat</li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="box">
-                    <h3>Ordered list</h3>
-                    <p>The <code>&lt;ol&gt;</code> tag defines an ordered list. An ordered list can be numerical or
-                        alphabetical. The <code>&lt;li&gt;</code> tag is used to define each list item.</p>
-                    <ol>
-                        <li>Monday</li>
-                        <li>Tuesday
-                            <ol>
-                                <li>Morning</li>
-                                <li>Evening</li>
-                            </ol>
-                        </li>
-                        <li>Wednesday</li>
-                        <li>Thursday</li>
-                        <li>It's Friday
-                            <ol>
-                                <li>Theeeeeeen</li>
-                            </ol>
-                        </li>
-                        <li>Saturday</li>
-                        <li>Sunday
-                            <ol>
-                                <li>Whaaaaaat</li>
-                            </ol>
-                        </li>
-                    </ol>
-                </div>
+            <div class="box">
+                <h3>Unordered list</h3>
+                <p>The <code>&lt;ul&gt;</code> tag defines an unordered list. Use the <code>&lt;ul&gt;</code> tag
+                    together with the <code>&lt;li&gt;</code> tag to create unordered lists.</p>
+                <h3>List of WW2 wars</h3>
+                <ul>
+                    <li>French offensive into Germany: September 1939</li>
+                    <li>Operation Weserübung: April–June 1940
+                        <ul>
+                            <li>German Invasion of Denmark</li>
+                            <li>German invasion of Norway</li>
+                        </ul>
+                    </li>
+                    <li>Battle of the Netherlands: May 1940</li>
+                    <li>Battle of Belgium: May 1940</li>
+                    <li>Battle of France: May – June 1940
+                        <ul>
+                            <li>Battle of Boulogne</li>
+                        </ul>
+                    </li>
+                    <li>Battle of Britain: July – October 1940</li>
+                    <li>Operation Overlord: June – August 1944
+                        <ul>
+                            <li>Operation Jupiter</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Ordered list</h3>
+                <p>The <code>&lt;ol&gt;</code> tag defines an ordered list. An ordered list is numerical. The
+                    <code>&lt;li&gt;</code> tag is used to define each list item.</p>
+                <h3>Recipe - Croque Madame with Canadian Bacon</h3>
+                <ol>
+                    <li>Prepare baking sheet with parchment paper or silpat liner, set aside. Preheat broiler.</li>
+                    <li>In medium sized skillet add butter and melt over medium heat.
+                        <ol>
+                            <li>Once butter is melted, whisk in flour until mixture is smooth and there are no clumps.
+                            </li>
+                            <li>Slowly whisk in milk and whisk until smooth and mixture starts to thicken.</li>
+                            <li>Remove from heat and whisk in 1/2 cup swiss cheese, fresh thyme leaves, grated nutmeg,
+                                kosher salt and ground pepper. </li>
+                        </ol>
+                    </li>
+                    <li>Remove from heat and whisk in 1/2 cup swiss cheese, fresh thyme leaves, grated nutmeg, kosher
+                        salt and ground pepper. </li>
+                    <li>Top 2 slices of bread with 4 slices Canadian Bacon and 2 tablespoons shredded swiss cheese.
+                    </li>
+                    <li>Place bread slices on baking sheet. Broil in oven until cheese is melted, browned and bubbly.
+                    </li>
+                    <li>Remove from oven and top with remaining slice of bread, cheese sauce side down.
+                        <ol>
+                            <li>Top each sandwich with equal parts swiss cheese sauce and remaining shredded swiss
+                                cheese. </li>
+                            <li>Place back under broiler and cook until cheese is fully melted and bubbly.</li>
+                        </ol>
+                    </li>
+                    <li>Enjoy food!</li>
+                </ol>
+            </div>
             </div>
         </section>
 
@@ -178,33 +183,31 @@
             <h2>Table</h2>
             <p>A table in HTML consists of table cells inside rows and columns.Each table cell is defined by a
                 <code>&lt;td&gt;</code> and a <code>&lt;/td&gt;</code> tag.Everything between <code>&lt;td&gt;</code>
-                and <code>&lt;/td&gt;</code> are the content of the table cell.</p>
+                and <code>&lt;/td&gt;</code> are the content of the table cell.
+            </p>
             <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Location</th>
+                        <th>Market Capitalization</th>
+                    </tr>
+                </thead>
                 <tbody>
                     <tr>
-                        <th>Name</th>
-                        <th>Gender</th>
-                        <th>Age</th>
+                        <th>APPLE INC</th>
+                        <th>United States</th>
+                        <th>&#36;2.1T</th>
                     </tr>
                     <tr>
-                        <th>Ivo</th>
-                        <th>Male</th>
-                        <th>39</th>
+                        <th>SAUDI ARAMCO</th>
+                        <th>Saudi Arabia</th>
+                        <th>&#36;1.9T</th>
                     </tr>
                     <tr>
-                        <th>George</th>
-                        <th>Male</th>
-                        <th>17</th>
-                    </tr>
-                    <tr>
-                        <th>Jane</th>
-                        <th>Female</th>
-                        <th>6</th>
-                    </tr>
-                    <tr>
-                        <th>John</th>
-                        <th>Male</th>
-                        <th>56</th>
+                        <th>MICROSOFT CORP</th>
+                        <th>United States</th>
+                        <th>&#36;1.8T</th>
                     </tr>
                 </tbody>
             </table>
@@ -214,15 +217,15 @@
             <h2>Alerts</h2>
             <div class="box">
                 <div class="message message--warning">
-                    <span class="btn-close" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
                     <p>This is a warning alert box that will disappear when you click on close button.</p>
                 </div>
                 <div class="message message--succes">
-                    <span class="btn-close" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
                     <p>This is a succes alert box that will disappear when you click on close button.</p>
                 </div>
                 <div class="message message--basic">
-                    <span class="btn-close" onclick="this.parentElement.style.display='none';">&times;</span>
+                    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
                     <p>This is a normal alert box that will disappear when you click on close button.</p>
                 </div>
             </div>
@@ -241,7 +244,8 @@
 
         <section id="gallery">
             <h2>Pictures</h2>
-            <p>The &lt;img&gt; tag is used to embed an image in an HTML page. Images are not technically inserted into a
+            <p>The <code>&lt;img&gt;</code> tag is used to embed an image in an HTML page. Images are not technically
+                inserted into a
                 web page; images are linked to web pages. The <img> tag creates a holding space for the referenced
                 image.</p>
             <h3>Single Image</h3>
@@ -295,9 +299,32 @@
         </section>
 
     </main>
+
+    <footer class="box--half">
+        <div>
+            <h2 class="footer__title">Maestro<span>.css</span><span class="copy">&copy;</span></h2>
+            <p class="footer__name"><a href="https://github.com/Adam-Safr">Adam-Safr 2021</a></p>
+            <p class="footer__email"><a href="mailto:adam.safr@pslib.cz">adam.safr@pslib.cz</a></p>
+            <div class="footer__icons">
+                <a href="https://github.com/pslib-cz/2021l4web-typographic-library-Adam-Safr"><img class="img--logo" src="./img/github_logo.png" /></a>
+                <a href="https://pslib.cz"><img class="pslib--logo" src="./img/pslib_logo.svg" /></a>
+            </div>
+        </div>
+
+        <div class="box--smal">
+            <h2>About project</h2>
+            <p class="footer__project">This project was made for school project in subject Web applications. Author gives all rights to copy and download this CSS file.</p>
+            <div class="footer__icons">
+                <a href="./img/html_logo.png"><img class="img--logo" src="./img/html_logo.png" /></a>
+                <a href="./img/css_logo.png"><img class="img--logo" src="./img/css_logo.png" /></a>
+                <a href="./img/js_logo.png"><img class="img--logo" src="./img/js_logo.png" /></a>
+            </div>
+        </div>
+    </footer>
+
     <script src="./js/script.js"></script>
-    <script src="./js/copy.js"></script>
     <script src="./js/darkmode.js"></script>
+
 </body>
 
 </html>
