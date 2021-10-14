@@ -142,15 +142,15 @@ header.sticky .navbar__menu li a:hover {
     color: var(--font-color);
 }
 
-.menu-btn{
+.menu-btn {
     color: var(--font-color);
     font-size: 26px;
     cursor: pointer;
     display: none;
 }
 
-@media (max-width: 1000px){
-    .navbar .navbar__menu{
+@media (max-width: 1000px) {
+    .navbar .navbar__menu {
         position: fixed;
         height: 100vh;
         width: 100%;
@@ -162,22 +162,22 @@ header.sticky .navbar__menu li a:hover {
         transition: 0.3s ease;
     }
 
-    .navbar .navbar__menu.active{
+    .navbar .navbar__menu.active {
         left: 0;
         top: -25px;
     }
 
-    .navbar .navbar__menu li{
+    .navbar .navbar__menu li {
         display: block;
     }
 
-    .navbar .navbar__menu li a{
+    .navbar .navbar__menu li a {
         display: inline-block;
         margin: 20px 0;
         font-size: 25px;
         color: var(--font-color);
     }
-    
+
     .menu-btn {
         display: block;
         z-index: 999;
@@ -188,7 +188,7 @@ header.sticky .navbar__menu li a:hover {
     }
 
     header .navbar__menu li a:hover {
-        color:var(--theme-color);
+        color: var(--theme-color);
     }
 
     header.sticky .navbar__menu li a:hover {
@@ -282,7 +282,7 @@ footer {
     font-size: 15px;
 }
 
-footer > div {
+footer>div {
     margin: 2em 0;
 }
 
@@ -319,7 +319,7 @@ footer h2 .copy {
     transition: 0.3s;
 }
 
-.footer__project{
+.footer__project {
     color: var(--code-grey);
     font-size: 14px;
 }
@@ -363,7 +363,8 @@ footer .name span {
         max-width: 1300px;
         flex-direction: row;
     }
-    footer > div {
+
+    footer>div {
         margin: 0;
         max-width: 40%;
     }

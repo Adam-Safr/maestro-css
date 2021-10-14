@@ -576,6 +576,10 @@ figure .gallery__caption {
         font-size: 13pt;
     }
 
+    p {
+        font-size: 12pt;
+    }
+
     header,
     footer,
     nav {
