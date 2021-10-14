@@ -142,11 +142,58 @@ header.sticky .navbar__menu li a:hover {
     color: var(--font-color);
 }
 
-.navbar__btn {
-    color: #fff;
-    font-size: 23px;
+.menu-btn{
+    color: var(--font-color);
+    font-size: 26px;
     cursor: pointer;
     display: none;
+}
+
+@media (max-width: 1000px){
+    .navbar .navbar__menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: var(--bg-color);
+        text-align: center;
+        padding-top: 80px;
+        transition: 0.3s ease;
+    }
+
+    .navbar .navbar__menu.active{
+        left: 0;
+        top: -25px;
+    }
+
+    .navbar .navbar__menu li{
+        display: block;
+    }
+
+    .navbar .navbar__menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+        color: var(--font-color);
+    }
+    
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    header .navbar__menu.active li a {
+        color: var(--font-color);
+    }
+
+    header .navbar__menu li a:hover {
+        color:var(--theme-color);
+    }
+
+    header.sticky .navbar__menu li a:hover {
+        color: var(--font-color);
+    }
 }
 
 p.section__info {
