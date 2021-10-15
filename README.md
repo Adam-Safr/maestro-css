@@ -196,4 +196,4 @@ Inside `<body>` create `<main>` tag where you put sections `<section>`. Every `<
 ## The end
 I hope this CSS file will help you
 Have a nice day :+1:  :tada:
-[](https://github.com/Adam-Safr)
+[Adam-Safr](https://github.com/Adam-Safr)
