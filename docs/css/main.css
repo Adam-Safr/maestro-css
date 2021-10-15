@@ -360,7 +360,6 @@ footer .name span {
 @media (min-width: 768px) {
     footer {
         padding: 4em 80px;
-        max-width: 1300px;
         flex-direction: row;
     }
 

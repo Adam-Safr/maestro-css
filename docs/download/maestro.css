@@ -544,6 +544,7 @@ figure .gallery__caption {
         line-height: 1.3 !important;
         background: #fff !important;
         color: #000 !important;
+        text-align: justify !important;
     }
 
     h1,
