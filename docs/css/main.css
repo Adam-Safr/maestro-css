@@ -68,7 +68,7 @@ span.typing {
 
 .navbar {
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0 30px;
     margin: auto;
 }
 
@@ -147,6 +147,15 @@ header.sticky .navbar__menu li a:hover {
     font-size: 26px;
     cursor: pointer;
     display: none;
+}
+
+@media (min-width: 460px) {
+    .navbar {
+        max-width: 1300px;
+        padding: 0 80px;
+        margin: auto;
+    }
+    
 }
 
 @media (max-width: 1000px) {

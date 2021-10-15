@@ -1,18 +1,186 @@
 # Maestro.css - *Free typography library*
-**Author:** *Adam Šáfr*
+**Author:** Adam Šáfr
 ## Description
-Maestro is a typographic library created with CSS. It was created for a school project.
-You don't need to code new CSS file every time you start new project. Maestro helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and croos-browser friendly.
+Maestro is a free typography CSS library. It was created for a school project.
+You don't need to make new CSS file every time you start new project. Maestro helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cros-browser friendly.
 ## Demo site
-There is link to demo **[demo](https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr)** site for style preview.
+There is link to **[demo](https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr)** site for style preview.
 ## Implementation
-Download maestro.css in docs/download/ folder. In your HTML page link maestro.css file to your head tag.
+1. Download maestro.css in **docs/download/** folder
+2. Link maestro.css file to `<head>` in every HTML page using syntax:
 ```html
 <link href="maestro.css" rel="stylesheet">
 ```
 ## Docs
+### Colours
+Maestro.css has predefined colours. Between lines 3-31 is the list of colours. You can change the colours by yourself. Selector :root defines colour for normal website mode. Selector `[data-theme="dark"]` defines the colours for website in dark mode.
 ### Typography
-...
+Font depends on your system. If you have an Apple device, the text will use Apple system font. Other it will use Segoe UI and Roboto.
+### Headings 
+You can use headings from `<h1>` to `<h6>`. Font sizes are: 
+* 30px for `<h1>`
+* 23px for `<h2>`
+* 20px for `<h3>`
+* 19px for `<h4>`
+* 18px for `<h5>`
+* 17px for `<h5>`
+### Types of text
+Font size of normal text is `1rem`. Other tags you can use are:
+- `<b>` or `<strong>` for **bold** text
+- `<i>` or `<em>` for *italic* text
+- `<u>` for __underlined__ text
+- `<s>` for ~~striked~~ text
+You can use special classes: 
+- `class="all-caps"` for CAPS text
+- `class="bold"` for **bold** text
+- `class="small"` for small text (size is 0.85 of normal text)
+## Quotes
+For one line quote text use tag `<q>`.
+For multiple line text use `<figure>` with `<blockquote>`. It display author name under the quote block. Syntax:
+```html
+<figure>
+    <blockquote>
+        <p>Your website is the center of your digital eco-system, like a brick and mortar location, the
+            experience matters once a customer enters, just as much as the perception they have of you
+            before they walk through the door.</p>
+        <figcaption><span class="author">Leland Dieno</span> Face The Book With Your Small Business
+        </figcaption>
+    </blockquote>
+</figure>
+```
+## Lists
+There are two types of lists
+# Unordered list
+The `<ul>` tag defines an unordered list. Use the `<ul>` tag together with the `<li>` tag to create unordered lists. Syntax:
+```html
+<ul>
+    <li>French offensive into Germany: September 1939</li>
+    <li>Operation Weserübung: April–June 1940
+        <ul>
+            <li>German Invasion of Denmark</li>
+            <li>German invasion of Norway</li>
+        </ul>
+    </li>
+</ul>
+```
+# Ordered list
+The `<ol>` tag defines an ordered list. An ordered list is numerical. The `<li>` tag is used to define each list item. Syntax:
+```html
+<ol>
+    <li>Prepare baking sheet with parchment paper or silpat liner, set aside. Preheat broiler.</li>
+    <li>In medium sized skillet add butter and melt over medium heat.
+        <ol>
+            <li>Once butter is melted, whisk in flour until mixture is smooth and there are no clumps.
+            </li>
+            <li>Slowly whisk in milk and whisk until smooth and mixture starts to thicken.</li>
+            <li>Remove from heat and whisk in 1/2 cup swiss cheese, fresh thyme leaves, grated nutmeg,
+                kosher salt and ground pepper. </li>
+        </ol>
+    </li>
+</ol>
+```
+## Table
+A table in HTML consists of table cells inside rows and columns. Each table cell is defined by a `<td>` and a `</td>` tag. Everything between `<td>` and `</td>` is the content of the table cell. Table head is defined by `<thead>` tag and has another background colour. Syntax:
+```html
+<table>
+    <thead>
+        <tr>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Market Capitalization</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Apple Inc.</th>
+            <th>United States</th>
+            <th>&#36;2.1T</th>
+        </tr>
+        <tr>
+            <th>Saudi Aramco</th>
+            <th>Saudi Arabia</th>
+            <th>&#36;1.9T</th>
+        </tr>
+        <tr>
+            <th>Microsoft Corporation</th>
+            <th>United States</th>
+            <th>&#36;1.8T</th>
+        </tr>
+    </tbody>
+</table>
+```
+## Alerts
+There are 3 types of alert messages. Every message has same HTML structure but has different CSS class.
+``` HTML
+<div class="message message--warning">
+    <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
+    <p>This is a warning alert box that will disappear when you click on close button.</p>
+</div>
+```
+- Use `class="message--warning"` for warning alert
+- Use `class="message--succes"` for positive alert
+- Use `class="message--basic"` for normal alert
 
+## Buttons 
+The `<button>` tag defines a clickable button. You can also use `class="button"` for any text tag with same effect. Example:
+```html
+<button class="button">Text</button>
+<input class="button" type="submit" value="Text">
+```
+There are 4 different classes for buttons:
+- Use class `class="btn-primary"` for main button
+- Use class `class="btn-noclick"` for unclickable button
+- Use class `class="btn-disabled"` for no-effect button
+- Use class `class="btn-warning"` for danger button
+## Pictures
+The `<img>` tag is used to embed an image in an HTML page. Use this syntax for single image:
+```html
+<figure class="gallery__block">
+    <a href="./img/goat.jpg">
+        <img src="./img/goat.jpg" alt="Fk jablonec football pilař venca">
+        <figcaption class="gallery__caption">Football goat</figcaption>
+    </a>
+</figure>
+```
+Use this syntax for photo gallery. You can add as many `<figure>` into `<div class="gallery">` blocks as you want:
+```html
+<div class="gallery">
+    <figure class="gallery__block">
+        <a href="./img/src.jpg">
+            <img src="./img/src.jpg" alt="picture alt">
+            <figcaption class="gallery__caption">Description</figcaption>
+        </a>
+    </figure>
+    <figure class="gallery__block">
+        <a href="./img/src.jpg">
+            <img src="./img/hasbi2.jpg" alt="Hasbulla model portrait">
+            <figcaption class="gallery__caption">Description</figcaption>
+        </a>
+    </figure>
+</div>
+```
+## Pre and code blocks
+The `<pre>` tag is used for indicating preformatted text. The `<code>` tag surrounds the code being marked up. Syntax: 
+```html
+<div class="code-block">
+    <div class="pre-wrapper line">
+        <pre id="first"><span class="code-tag">h1,</span>
+        <span class="code-class">.text-h1</span><span class="code-punctuation"> {</span>
+        <span class="code-text"><span class="code-punctuation">font-weight:</span> 500;
+        <span class="code-punctuation">font-size:</span> 42px;
+        <span class="code-punctuation">margin:</span> 0px 0px 0.7em 0px;</span>
+        <span class="code-punctuation">}</span></pre>
+    </div>
+    <div class="pre-wrapper line">
+        <pre id="third"><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span></pre>
+    </div>
+</div>
+```
+There are classes for highliting the code parts. Use them on `<span>` inside `<pre>` tag
+- Use class `class="code-tag"` for code tags
+- Use class `class="code-class"` for classes
+- Use class `class="code-text"` for normal texts
+- Use class `class="code-punctuation"` for code punctuations
 
-## Components
+### The end
+I hope this CSS file will help you and have a nice day :+1: :tada:

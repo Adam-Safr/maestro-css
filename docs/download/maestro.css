@@ -2,7 +2,6 @@
 
 :root {
     --dark-grey: #eeebeb;
-    --black: #dbdada;
     --bg-color: #ffffff;
     --font-color: rgb(5, 5, 5);
     --theme-color: #006b38;
@@ -11,6 +10,7 @@
     --code-grey: rgb(68, 68, 68);
     --code-white: #fff;
     --white: #fff;
+    --black: #dbdada;
     --code-blue: #0c3269;
     --alert-warning: #ca2e2e;
     --alert-succes: #4BB543;
@@ -127,7 +127,8 @@ h6,
 }
 
 b,
-strong {
+strong,
+.bold {
     font-weight: 700;
 }
 
@@ -452,23 +453,36 @@ button.btn-primary,
     transition: 0.2s;
 }
 
-button[disabled],
-.button[disabled] {
+button.btn-noclick,
+.button.btn-noclick {
     cursor: default;
     background-color: #2a5a9c;
     color: white;
     transition: 0.2s;
 }
 
-button[disabled]:hover,
-.button[disabled]:hover {
+button.btn-noclick:hover,
+.button.btn-noclick:hover {
     background-color: #859dc0;
     transition: 0.2s;
 }
 
-button.disabled,
-.button.disabled {
+button.btn-disabled,
+.button.btn-disabled {
     background-color: #859dc0;
+    transition: 0.2s;
+}
+
+button.btn-warning,
+.button.btn-warning {
+    background-color: #97132f;
+    transition: 0.2s;
+    color: var(--white);
+}
+
+button.btn-warning:hover,
+.button.btn-warning:hover {
+    background-color: #720c22;
     transition: 0.2s;
 }
 
