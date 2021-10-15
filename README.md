@@ -1,21 +1,21 @@
-# Maestro.css - *Free typography library*
+# Maestro.css - Free typography library
 **Author:** Adam Šáfr
 ## Description
 Maestro is a free typography CSS library. It was created for a school project.
-You don't need to make new CSS file every time you start new project. Maestro helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cros-browser friendly.
+You don't need to make new CSS file every time you start new project. Maestro helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cross-browser friendly.
 ## Demo site
 There is link to **[demo](https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr)** site for style preview.
 ## Implementation
-1. Download maestro.css in **docs/download/** folder
+1. Download maestro.css in **docs/download** folder
 2. Link maestro.css file to `<head>` in every HTML page using syntax:
 ```html
 <link href="maestro.css" rel="stylesheet">
 ```
 ## Docs
 ### Colours
-Maestro.css has predefined colours. Between lines 3-31 is the list of colours. You can change the colours by yourself. Selector :root defines colour for normal website mode. Selector `[data-theme="dark"]` defines the colours for website in dark mode.
+Maestro.css has predefined colours. Between lines 3-31 you can find the list of colours. Selector `:root` defines colours for normal website mode. Selector `[data-theme="dark"]` defines the colours for website in dark mode. You can change them whatever you want.
 ### Typography
-Font depends on your system. If you have an Apple device, the text will use Apple system font. Other it will use Segoe UI and Roboto.
+Website font depends on your system. If you have an Apple device, the text will use Apple system font. Otherwise it will use Segoe UI and Roboto.
 ### Headings 
 You can use headings from `<h1>` to `<h6>`. Font sizes are: 
 * 30px for `<h1>`
@@ -30,27 +30,26 @@ Font size of normal text is `1rem`. Other tags you can use are:
 - `<i>` or `<em>` for *italic* text
 - `<u>` for __underlined__ text
 - `<s>` for ~~striked~~ text
+
 You can use special classes: 
 - `class="all-caps"` for CAPS text
 - `class="bold"` for **bold** text
 - `class="small"` for small text (size is 0.85 of normal text)
-## Quotes
+### Quotes
 For one line quote text use tag `<q>`.
-For multiple line text use `<figure>` with `<blockquote>`. It display author name under the quote block. Syntax:
+For multiple line text use `<figure>` with `<blockquote>`. It displays author name under the quote block. Syntax:
 ```html
 <figure>
     <blockquote>
-        <p>Your website is the center of your digital eco-system, like a brick and mortar location, the
-            experience matters once a customer enters, just as much as the perception they have of you
-            before they walk through the door.</p>
-        <figcaption><span class="author">Leland Dieno</span> Face The Book With Your Small Business
-        </figcaption>
+        <p>Main quote text</p>
+        <figcaption><span class="author">Author name</span>Work</figcaption>
     </blockquote>
 </figure>
 ```
-## Lists
+
+### Lists
 There are two types of lists
-# Unordered list
+## Unordered list
 The `<ul>` tag defines an unordered list. Use the `<ul>` tag together with the `<li>` tag to create unordered lists. Syntax:
 ```html
 <ul>
@@ -63,7 +62,7 @@ The `<ul>` tag defines an unordered list. Use the `<ul>` tag together with the `
     </li>
 </ul>
 ```
-# Ordered list
+## Ordered list
 The `<ol>` tag defines an ordered list. An ordered list is numerical. The `<li>` tag is used to define each list item. Syntax:
 ```html
 <ol>
@@ -79,7 +78,7 @@ The `<ol>` tag defines an ordered list. An ordered list is numerical. The `<li>`
     </li>
 </ol>
 ```
-## Table
+### Table
 A table in HTML consists of table cells inside rows and columns. Each table cell is defined by a `<td>` and a `</td>` tag. Everything between `<td>` and `</td>` is the content of the table cell. Table head is defined by `<thead>` tag and has another background colour. Syntax:
 ```html
 <table>
@@ -109,7 +108,7 @@ A table in HTML consists of table cells inside rows and columns. Each table cell
     </tbody>
 </table>
 ```
-## Alerts
+### Alerts
 There are 3 types of alert messages. Every message has same HTML structure but has different CSS class.
 ``` HTML
 <div class="message message--warning">
@@ -121,7 +120,7 @@ There are 3 types of alert messages. Every message has same HTML structure but h
 - Use `class="message--succes"` for positive alert
 - Use `class="message--basic"` for normal alert
 
-## Buttons 
+### Buttons 
 The `<button>` tag defines a clickable button. You can also use `class="button"` for any text tag with same effect. Example:
 ```html
 <button class="button">Text</button>
@@ -159,7 +158,7 @@ Use this syntax for photo gallery. You can add as many `<figure>` into `<div cla
     </figure>
 </div>
 ```
-## Pre and code blocks
+### Pre and code blocks
 The `<pre>` tag is used for indicating preformatted text. The `<code>` tag surrounds the code being marked up. Syntax: 
 ```html
 <div class="code-block">
@@ -182,5 +181,5 @@ There are classes for highliting the code parts. Use them on `<span>` inside `<p
 - Use class `class="code-text"` for normal texts
 - Use class `class="code-punctuation"` for code punctuations
 
-### The end
+## The end
 I hope this CSS file will help you and have a nice day :+1: :tada:
