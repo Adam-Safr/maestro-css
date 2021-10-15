@@ -6,21 +6,21 @@ You don't need to make new CSS file every time you start new project. Maestro he
 ## Demo site
 There is link to **[demo](https://pslib-cz.github.io/2021l4web-typographic-library-Adam-Safr)** site for style preview.
 ## Content of the documentation
-- [Implementation](#Implementation)
-- [Colours](#Colours)
-- [Typography](#Typography)
-- [Types of text](#Types-of-text)
-- [Quotes](#Quotes)
-- [Lists](#Lists)
-    - [Unordered list](#Unordered-list)
-    - [Ordered list](#Ordered-list)
-- [Table](#Table)
-- [Alerts](#Alerts)
-- [Buttons](#Buttons)
-- [Pictures](#Pictures)
-- [Pre and code blocks](#Pre-and-code-blocks)
-- [Sections](#sections)
-- [End](#the-end)
+1. [Implementation](#Implementation)
+2. [Colours](#Colours)
+3. [Typography](#Typography)
+4. [Types of text](#Types-of-text)
+5. [Quotes](#Quotes)
+6. [Lists](#Lists)
+    1. [Unordered list](#Unordered-list)
+    2. [Ordered list](#Ordered-list)
+7. [Table](#Table)
+8. [Alerts](#Alerts)
+9. [Buttons](#Buttons)
+10. [Pictures](#Pictures)
+11. [Code blocks](#Code-blocks)
+12. [Sections](#sections)
+14. [End](#the-end)
 ## Implementation
 1. Download maestro.css in **docs/download** folder
 2. Add file inside your project folder
@@ -62,7 +62,7 @@ For multiple line text use `<figure>` with `<blockquote>`. It displays author na
     </blockquote>
 </figure>
 ```
-## Lists
+## Lists
 There are two types of lists:
 ### Unordered list
 The `<ul>` tag defines an unordered list. Use the `<ul>` tag together with the `<li>` tag to create unordered lists. Syntax:
@@ -120,7 +120,7 @@ A table in HTML consists of table cells inside rows and columns. Each table cell
     </tbody>
 </table>
 ```
-## Alerts
+## Alerts
 There are 3 types of alert messages. Every message has same HTML structure but has different CSS class.
 ``` HTML
 <div class="message message--warning">
@@ -142,7 +142,7 @@ There are 4 different classes for buttons:
 - Use class `class="btn-noclick"` for unclickable button.
 - Use class `class="btn-disabled"` for no-effect button.
 - Use class `class="btn-warning"` for danger button.
-## Pictures
+## Pictures
 The `<img>` tag is used to embed an image in an HTML page. Use this syntax for single image:
 ```html
 <figure class="gallery__block">
@@ -169,7 +169,7 @@ Use this syntax for photo gallery. You can add as many `<figure>` into `<div cla
     </figure>
 </div>
 ```
-## Pre and code blocks
+## Code blocks
 The `<pre>` tag is used for indicating preformatted text. The `<code>` tag surrounds the code being marked up. Syntax: 
 ```html
 <div class="code-block">
@@ -191,7 +191,7 @@ There are classes for highliting the code parts. Use them on `<span>` inside `<p
 - Use class `class="code-class"` for classes.
 - Use class `class="code-text"` for normal texts.
 - Use class `class="code-punctuation"` for code punctuations.
-## Sections
+## Sections
 Inside `<body>` create `<main>` tag where you put sections `<section>`. Every `<section>` should have `<h>`tag inside. The do whatever you want.
 ## The end
 I hope this CSS file will help you and have a nice day :+1:  :tada:
