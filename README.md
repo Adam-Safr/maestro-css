@@ -22,7 +22,7 @@ There is link to **[demo](https://pslib-cz.github.io/2021l4web-typographic-libra
 12. [Sections](#sections)
 14. [End](#the-end)
 ## Implementation
-1. Download maestro.css in **docs/download** folder
+1. Download maestro.css in **[docs/download](https://github.com/pslib-cz/2021l4web-typographic-library-Adam-Safr/tree/master/docs/download)** folder
 2. Add file inside your project folder
 3. Link maestro.css file to `<head>` in every HTML page using syntax:
 ```html
@@ -152,7 +152,7 @@ The `<img>` tag is used to embed an image in an HTML page. Use this syntax for s
     </a>
 </figure>
 ```
-Use this syntax for photo gallery. You can add as many `<figure>` into `<div class="gallery">` blocks as you want:
+Use this syntax for photo gallery. You can add as many `<figure>` into `<div class="gallery">` as you want:
 ```html
 <div class="gallery">
     <figure class="gallery__block">
@@ -174,7 +174,7 @@ The `<pre>` tag is used for indicating preformatted text. The `<code>` tag surro
 ```html
 <div class="code-block">
     <div class="pre-wrapper line">
-        <pre id="first"><span class="code-tag">h1,</span>
+        <pre><span class="code-tag">h1,</span>
         <span class="code-class">.text-h1</span><span class="code-punctuation"> {</span>
         <span class="code-text"><span class="code-punctuation">font-weight:</span> 500;
         <span class="code-punctuation">font-size:</span> 42px;
@@ -182,7 +182,7 @@ The `<pre>` tag is used for indicating preformatted text. The `<code>` tag surro
         <span class="code-punctuation">}</span></pre>
     </div>
     <div class="pre-wrapper line">
-        <pre id="third"><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span></pre>
+        <pre><span class="code-punctuation">&lt;p </span><span class="code-class">class="text-h1"</span><span class="code-punctuation">&gt;</span> Heading <span class="code-punctuation">&lt;/p&gt;</span></pre>
     </div>
 </div>
 ```
@@ -192,6 +192,8 @@ There are classes for highliting the code parts. Use them on `<span>` inside `<p
 - Use class `class="code-text"` for normal texts.
 - Use class `class="code-punctuation"` for code punctuations.
 ## Sections
-Inside `<body>` create `<main>` tag where you put sections `<section>`. Every `<section>` should have `<h>`tag inside. The do whatever you want.
+Inside `<body>` create `<main>` tag where you put sections `<section>`. Every `<section>` should have `<h>`tag inside. Then do whatever you want.
 ## The end
-I hope this CSS file will help you and have a nice day :+1:  :tada:
+I hope this CSS file will help you
+Have a nice day :+1:  :tada:
+[](https://github.com/Adam-Safr)
