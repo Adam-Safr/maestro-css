@@ -46,18 +46,17 @@ For multiple line text use `<figure>` with `<blockquote>`. It displays author na
     </blockquote>
 </figure>
 ```
-
 ### Lists
 There are two types of lists
 ## Unordered list
 The `<ul>` tag defines an unordered list. Use the `<ul>` tag together with the `<li>` tag to create unordered lists. Syntax:
 ```html
 <ul>
-    <li>French offensive into Germany: September 1939</li>
-    <li>Operation Weserübung: April–June 1940
+    <li>Item</li>
+    <li>Item 2
         <ul>
-            <li>German Invasion of Denmark</li>
-            <li>German invasion of Norway</li>
+            <li>More of item 2</li>
+            <li>More of item 2</li>
         </ul>
     </li>
 </ul>
@@ -66,14 +65,11 @@ The `<ul>` tag defines an unordered list. Use the `<ul>` tag together with the `
 The `<ol>` tag defines an ordered list. An ordered list is numerical. The `<li>` tag is used to define each list item. Syntax:
 ```html
 <ol>
-    <li>Prepare baking sheet with parchment paper or silpat liner, set aside. Preheat broiler.</li>
-    <li>In medium sized skillet add butter and melt over medium heat.
+    <li>First item</li>
+    <li>Second item
         <ol>
-            <li>Once butter is melted, whisk in flour until mixture is smooth and there are no clumps.
-            </li>
-            <li>Slowly whisk in milk and whisk until smooth and mixture starts to thicken.</li>
-            <li>Remove from heat and whisk in 1/2 cup swiss cheese, fresh thyme leaves, grated nutmeg,
-                kosher salt and ground pepper. </li>
+            <li>Second item detail</li>
+            <li>Second item detail</li>
         </ol>
     </li>
 </ol>
@@ -84,26 +80,26 @@ A table in HTML consists of table cells inside rows and columns. Each table cell
 <table>
     <thead>
         <tr>
-            <th>Company</th>
-            <th>Location</th>
-            <th>Market Capitalization</th>
+            <th>Table heading 1</th>
+            <th>Table heading 2</th>
+            <th>Table heading 3</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <th>Apple Inc.</th>
-            <th>United States</th>
-            <th>&#36;2.1T</th>
+            <th>Item 1</th>
+            <th>Item 1</th>
+            <th>Item 1</th>
         </tr>
         <tr>
-            <th>Saudi Aramco</th>
-            <th>Saudi Arabia</th>
-            <th>&#36;1.9T</th>
+            <th>Item 2</th>
+            <th>Item 2</th>
+            <th>Item 2</th>
         </tr>
         <tr>
-            <th>Microsoft Corporation</th>
-            <th>United States</th>
-            <th>&#36;1.8T</th>
+            <th>Item 3</th>
+            <th>Item 3</th>
+            <th>Item 3</th>
         </tr>
     </tbody>
 </table>
@@ -113,7 +109,7 @@ There are 3 types of alert messages. Every message has same HTML structure but h
 ``` HTML
 <div class="message message--warning">
     <span class="btn-close" onclick="this.parentElement.style.display='none';">x</span>
-    <p>This is a warning alert box that will disappear when you click on close button.</p>
+    <p>This is a warning alert box that will disappear when you click on X button.</p>
 </div>
 ```
 - Use `class="message--warning"` for warning alert
