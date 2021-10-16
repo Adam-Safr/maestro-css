@@ -194,5 +194,5 @@ There are classes for highliting the code parts. Use them on `<span>` inside `<p
 ## Sections
 Inside `<body>` create `<main>` tag where you put sections `<section>`. Every `<section>` should have `<h>`tag inside. Then do whatever you want.
 ## The end
-I hope this CSS file will help you
+I hope this CSS file will help you\
 Have a nice day :+1:  :tada:
