@@ -1,5 +1,5 @@
 # Maestro.css - Free typography library
-**Author:** Adam Šáfr
+**Author:** [Adam-Safr](https://github.com/Adam-Safr)
 ## Description
 Maestro is a free typography CSS library. It was created for a school project.
 You don't need to make new CSS file every time you start new project. Maestro helps you style your headlines, special text markups, images, lists, basic tables, buttons, alerts and more. It's responsible and cross-browser friendly.
@@ -146,9 +146,9 @@ There are 4 different classes for buttons:
 The `<img>` tag is used to embed an image in an HTML page. Use this syntax for single image:
 ```html
 <figure class="gallery__block">
-    <a href="./img/goat.jpg">
-        <img src="./img/goat.jpg" alt="Fk jablonec football pilař venca">
-        <figcaption class="gallery__caption">Football goat</figcaption>
+    <a href="./img/file.jpg">
+        <img src="./img/file.jpg" alt="alternative text">
+        <figcaption class="gallery__caption">Caption</figcaption>
     </a>
 </figure>
 ```
@@ -156,15 +156,15 @@ Use this syntax for photo gallery. You can add as many `<figure>` into `<div cla
 ```html
 <div class="gallery">
     <figure class="gallery__block">
-        <a href="./img/src.jpg">
-            <img src="./img/src.jpg" alt="picture alt">
-            <figcaption class="gallery__caption">Description</figcaption>
+        <a href="./img/file.jpg">
+            <img src="./img/file.jpg" alt="alternative text">
+            <figcaption class="gallery__caption">Caption</figcaption>
         </a>
     </figure>
     <figure class="gallery__block">
-        <a href="./img/src.jpg">
-            <img src="./img/hasbi2.jpg" alt="Hasbulla model portrait">
-            <figcaption class="gallery__caption">Description</figcaption>
+        <a href="./img/file.jpg">
+            <img src="./img/file.jpg" alt="alternative text">
+            <figcaption class="gallery__caption">Caption</figcaption>
         </a>
     </figure>
 </div>
@@ -196,4 +196,3 @@ Inside `<body>` create `<main>` tag where you put sections `<section>`. Every `<
 ## The end
 I hope this CSS file will help you
 Have a nice day :+1:  :tada:
-[Adam-Safr](https://github.com/Adam-Safr)
